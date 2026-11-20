@@ -34,7 +34,6 @@
 		<module>cloud</module>
 		<module>services</module>
 		<module>common-lib</module>
-		<module>job-portal-user-service</module>
 	</modules>
 
 	<properties>
@@ -63,6 +62,13 @@
 			</dependency>
 
 			<dependency>
+				<groupId>io.jsonwebtoken</groupId>
+				<artifactId>jjwt-impl</artifactId>
+				<version>${jjwt.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+
+			<dependency>
 				<groupId>com.jincode.job</groupId>
 				<artifactId>common-lib</artifactId>
 				<version>${project.version}</version>
@@ -77,7 +83,7 @@
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<version>{$lombok.version}</version>
+				<version>${lombok.version}</version>
 				<scope>provided</scope>
 			</dependency>
 

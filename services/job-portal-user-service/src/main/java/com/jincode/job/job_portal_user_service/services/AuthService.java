@@ -5,7 +5,7 @@ import com.jincode.job.job_portal_user_service.payload.LoginRequest;
 import com.jincode.job.job_portal_user_service.payload.SignupRequest;
 
 public interface AuthService {
-    AuthResponse signup(SignupRequest req);
+    AuthResponse signup(SignupRequest req) throws Exception;
 
     AuthResponse login(LoginRequest req);
 }

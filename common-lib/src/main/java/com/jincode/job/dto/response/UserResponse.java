@@ -11,8 +11,8 @@ public class UserResponse {
     private String email;
     private String phone;
     private String profileImage;
-    private String UserRole;
-    private String UserStatus;
+    private String Role;
+    private String Status;
     private Boolean verified;
     private LocalDateTime lastLogin;
     private LocalDateTime createAt;
