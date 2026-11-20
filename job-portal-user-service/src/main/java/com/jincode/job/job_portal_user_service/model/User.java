@@ -38,15 +38,18 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
 
+    @Column(nullable = false)
     private String phone;
 
+    @Column()
     private String profileImage;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @Builder.Default
     private UserRole userRole = UserRole.ROLE_JOB_SEEKER;
 
     @Enumerated(EnumType.STRING)
